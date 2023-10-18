@@ -1,13 +1,13 @@
 package ru.netology;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
     @Test
-    void shouldReturn100IfAmountIs900() {
+    public void shouldReturn100IfAmountIs900() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void amountRemainEqualToBoundary() {
+    public void amountRemainEqualToBoundary() {
 
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
